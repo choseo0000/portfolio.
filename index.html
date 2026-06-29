@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title></head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Portfolio<span>.</span>서영</div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Child Studies × Educational Psychology</div>
+      <h1>건강한 <span class="hl">웃음</span>으로<br>세상을 가득<br>채우고 싶습니다.</h1>
+      <p class="lead">
+        아동학을 본전공, 교육심리학을 복수전공하며,<br>
+        사람의 행동과 마음이 만들어지는 과정을 배웠습니다.<br><br>
+        사람을 이해하는 마케팅을 합니다.
+      </p>
+      <div class="hero-meta">
+        <div><b>Name</b> 조서영 Cho SeoYoung</div>
+        <div><b>University</b> 서울여자대학교</div>
+        <div><b>Major</b> 아동학과 · 교육심리학과(복수)</div>
+      </div>
+    </div>
+    <div class="photo-frame">
+      <div class="ring"></div>
+      <img src="assets/profile.jpg" alt="조서영 프로필 사진">
+      <div class="tag">Hi, I'm SeoYoung :)</div>
+    </div>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,30 C150,60 300,0 450,30 C600,60 750,0 900,30 C1050,60 1150,15 1200,30 L1200,60 L0,60 Z" fill="rgba(95,168,194,0.18)"/>
+  </svg>
+</header>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">About Me</div>
+      <h2>관찰하고, 분석하고,<br>다시 사람에게로 돌아옵니다.</h2>
+      <p>통계 분석 역량과 소통 역량, 두 축을 바탕으로 교육·심리·마케팅 현장을 두루 경험했습니다.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="pill-card">
+        <h3>Activity</h3>
+        <ul>
+          <li><a href="#proj-hackers">해커스 인강 마케팅 팀 인턴</a></li>
+          <li><a href="#proj-assesta">어세스타 플랫폼 솔루션 개발팀 인턴</a></li>
+          <li><a href="#proj-kia">기아그린서포터즈</a></li>
+          <li>사회성증진프로그램 보조교사</li>
+          <li>예룸예술학교 보조교사</li>
+          <li><a href="#proj-sodam">삼성서울병원 소담누리</a></li>
+          <li>교내 소학회 운영 (심리학회)</li>
+        </ul>
+      </div>
+      <div class="about-right">
+        <div class="pill-card">
+          <h3>Tools</h3>
+          <div class="chip-row">
+            <span class="chip">Excel</span>
+            <span class="chip">Notion</span>
+            <span class="chip">Canva</span>
+            <span class="chip">Google Workspace</span>
+            <span class="chip">Procreate</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">R</span>
+            <span class="chip">SPSS</span>
+            <span class="chip">Figma (기초)</span>
+          </div>
+        </div>
+        <div class="pill-card" id="awards">
+          <h3>Awards</h3>
+          <div class="award-strip">
+            <div class="row"><b>01</b> 기아 그린 서포터즈 최우수상</div>
+            <div class="row"><b>02</b> 포스코 레벨업 그라운드 우수상</div>
+            <div class="row"><b>03</b> 바롬종합설계 프로젝트 우수상</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Projects</div>
+      <h2>현장에서 직접 쌓은 경험들</h2>
+      <p>인턴, 봉사, 공모전까지 — 사람을 향한 관찰이 어떻게 결과로 이어졌는지 정리했습니다.</p>
+    </div>
+
+    <!-- 1. Assesta -->
+    <article id="proj-assesta" class="project">
+      <div class="p-text">
+        <span class="org">(주)어세스타 인턴</span><span class="when">2025.07 – 2025.08</span>
+        <h3>MBTI 데이터로 사용자의 마음 읽기</h3>
+        <div class="desc">
+          <h4>01 · 만족도 조사 UI 개선</h4>
+          <ul>
+            <li>20대 참여자가 텍스트 중심 응답 문항을 불편해하는 지점을 관찰로 발견</li>
+            <li>이모티콘·예시 문장을 활용한 새 응답 UI 시안 제작</li>
+          </ul>
+          <h4>02 · 대학생 MBTI 서베이 분석</h4>
+          <ul>
+            <li>학습·연애·관계 등 실제 맥락을 반영한 문항 설계</li>
+            <li>데이터 수집·분석 후 전문가 해석 예약 서비스 아이디어 도출</li>
+          </ul>
+        </div>
+        <div class="result-box"><b>Result.</b> 제안한 UI 시안이 현장에 실제 적용되어 응답률과 만족도가 상승했습니다.</div>
+      </div>
+      <div class="p-media">
+        <span class="num">01</span>
+        <img src="assets/proj-assesta.jpg" alt="어세스타 인턴 프로젝트 결과물">
+      </div>
+    </article>
+
+    <!-- 2. Kia Green Supporters -->
+    <article id="proj-kia" class="project rev">
+      <div class="p-text">
+        <span class="org">기아그린서포터즈</span><span class="when">2025.03 – 2025.11</span>
+        <h3>버려진 것들이 다시 달려요</h3>
+        <div class="desc">
+          <h4>담당 역할</h4>
+          <ul>
+            <li>환경교육 프로그램 기획 및 교육 콘텐츠 제작</li>
+            <li>아나바다 활동과 환경 체험 부스 운영</li>
+            <li>텀블러 화분 만들기, PET 체험 등 환경보호 행동 유도 활동 구성</li>
+            <li>현장 운영과 참여자 경험 관리 전반 참여</li>
+          </ul>
+        </div>
+        <div class="result-box"><b>Result.</b> 약 150여 명 방문, 제작 키트 완판, 약 200개 물품 순환, 최우수상 수상.</div>
+      </div>
+      <div class="p-media">
+        <span class="num">02</span>
+        <img src="assets/proj-kia.jpg" alt="기아그린서포터즈 활동 사진">
+      </div>
+    </article>
+
+    <!-- 3. POSCO -->
+    <article id="proj-posco" class="project">
+      <div class="p-text">
+        <span class="org">포스코 레벨업 그라운드</span><span class="when">2025.03 – 2025.06</span>
+        <h3>폐타이어가 안전화가 되기까지</h3>
+        <div class="desc">
+          <h4>담당 역할 및 핵심 기여</h4>
+          <ul>
+            <li>순환자원 발굴 및 밸류체인 구축 전담</li>
+            <li>팀과 협업해 성과 지표 설계 및 결과 도출 프로세스 정립</li>
+            <li>폐타이어를 활용한 산업용 안전화 제작 아이디어 제안</li>
+            <li>환경오염·산업안전 문제를 동시에 해결하는 구조로 정리</li>
+          </ul>
+        </div>
+        <div class="result-box"><b>Result.</b> 아이디어의 실현 가능성과 사회적 파급력을 인정받아 우수상을 수상했습니다.</div>
+      </div>
+      <div class="p-media">
+        <span class="num">03</span>
+        <img src="assets/proj-posco.jpg" alt="포스코 레벨업그라운드 발표 사진">
+      </div>
+    </article>
+
+    <!-- 4. 바롬종합설계 -->
+    <article id="proj-barom" class="project rev">
+      <div class="p-text">
+        <span class="org">바롬종합설계프로젝트</span><span class="when">2024.03 – 2024.06</span>
+        <h3>상담실을 심리적 안전공간으로</h3>
+        <div class="desc">
+          <h4>담당 역할 및 주요 활동</h4>
+          <ul>
+            <li>고민 던지기 활동으로 아이스 브레이킹 진행</li>
+            <li>간이 심리검사로 학생 개개인의 고민·감정 상태 진단</li>
+            <li>진단 결과 기반 처방전 제공으로 고민 접근 유도</li>
+          </ul>
+        </div>
+        <div class="result-box"><b>Result.</b> 아이들이 스스로 감정을 이야기하기 시작했고, 상담실에 대한 긍정적 인식이 확산되어 우수상을 수상했습니다.</div>
+      </div>
+      <div class="p-media">
+        <span class="num">04</span>
+        <img src="assets/proj-barom.jpg" alt="바롬종합설계프로젝트 결과물">
+      </div>
+    </article>
+
+    <!-- 5. 소담누리 -->
+    <article id="proj-sodam" class="project">
+      <div class="p-text">
+        <span class="org">삼성서울병원 소담누리</span><span class="when">2024.03 – 2024.08</span>
+        <h3>환아와 보호자의 마음 곁에서</h3>
+        <div class="desc">
+          <h4>담당 역할 — 총무팀장</h4>
+          <ul>
+            <li>프로그램 기획·운영·조정 전반 총괄, 팀원·예산 관리</li>
+            <li>홍보 디자인 및 참여 캐릭터 직접 제작</li>
+            <li>환아 컨디션에 맞춰 난이도·진행 방식 유연하게 조정</li>
+            <li>운영 후 피드백 정리 및 프로그램 개선</li>
+          </ul>
+        </div>
+        <div class="result-box"><b>Result.</b> 프로그램 참여도 상승과 보호자들의 긍정적 피드백, 의료 환경에 맞는 유연한 조정 능력을 키웠습니다.</div>
+      </div>
+      <div class="p-media">
+        <span class="num">05</span>
+        <img src="assets/proj-sodam.jpg" alt="소담누리 봉사활동 사진">
+      </div>
+    </article>
+
+    <!-- 6. 교내 모의수업 -->
+    <article id="proj-class" class="project rev">
+      <div class="p-text">
+        <span class="org">교내 모의수업</span><span class="when">아동학과</span>
+        <h3>유아의 손끝에서 시작되는 배움</h3>
+        <div class="desc">
+          <h4>요리 · 수학 · 미술 프로그램 기획</h4>
+          <ul>
+            <li>샐러드 파스타 만들기 — 요리 순서도와 재료 준비까지 운영</li>
+            <li>병뚜껑으로 신발 측정 후 반 만의 신발장 제작 — 측정·비교·창의적 사고력</li>
+            <li>워터붓·휴지·물감으로 색의 변화 관찰하는 미술 활동</li>
+            <li>자연사랑단 보조교사로 유아 관찰·탐험 사고력 증진 유도</li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-media">
+        <span class="num">06</span>
+        <img src="assets/proj-class.jpg" alt="교내 모의수업 결과물">
+      </div>
+    </article>
+
+    <!-- 7. HACKERS -->
+    <article id="proj-hackers" class="project">
+      <div class="p-text">
+        <span class="org">HACKERS 인턴</span><span class="when">2025.12 –</span>
+        <h3>데이터로 보는 수험생의 마음</h3>
+        <div class="desc">
+          <h4>이벤트 운영 · 브랜드 홍보</h4>
+          <ul>
+            <li>UX 서베이 겸 트래픽 이벤트 '합격 도시락' 기획, 선택형 혜택 3종 설계</li>
+            <li>카드뉴스·영상 후기 제작, 구글 퍼포먼스 맥스 검색 광고 기획</li>
+            <li>CRM 마케팅 콘텐츠 기획(DB 활용)</li>
+          </ul>
+          <h4>데이터 분석 · 고객 관리</h4>
+          <ul>
+            <li>GA 방문자 분석 및 KPI 관리·보고</li>
+            <li>이벤트 CS 처리 및 수강기록 개선 작업</li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-media">
+        <span class="num">07</span>
+        <img src="assets/proj-hackers.jpg" alt="해커스 인강 마케팅 이벤트 페이지">
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="closing" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center; color:var(--sky-deep);">Thank you</div>
+    <h2>오늘의 관찰이 내일의 <span class="em">웃음</span>이 되도록.</h2>
+    <p>읽어주셔서 감사합니다. 함께 일하며 더 많은 이야기를 나누고 싶습니다.</p>
+    <div class="sign">Cho SeoYoung</div>
+    <div class="date">2026.04</div>
+  </div>
+</section>
+
+<footer>© 2026 Cho SeoYoung. All rights reserved.</footer>
+
+</body>
+</html>

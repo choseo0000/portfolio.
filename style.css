@@ -1,0 +1,260 @@
+:root{
+    --paper:#FBF8F2;
+    --ink:#27302A;
+    --sky:#BFE3EF;
+    --sky-deep:#5FA8C2;
+    --coral:#F4906B;
+    --moss:#90A876;
+    --line:#27302A;
+    --card:#ffffff;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--coral); color:#fff;}
+
+  h1,h2,h3,h4{ font-family:'Gowun Batang', serif; margin:0; }
+
+  a{ color:inherit; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+
+  .pill-card li a{
+    text-decoration:none; color:inherit;
+    border-bottom:1px dashed var(--sky-deep);
+    transition:color .2s, border-color .2s;
+  }
+  .pill-card li a:hover{ color:var(--sky-deep); border-color:var(--sky-deep); }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(8px);
+    background:rgba(251,248,242,0.86);
+    border-bottom:1px solid rgba(39,48,42,0.1);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .brand{ font-family:'Gowun Batang', serif; font-weight:700; font-size:19px; letter-spacing:0.5px; }
+  .brand span{ color:var(--coral); }
+  .navlinks{ display:flex; gap:28px; font-size:14px; font-weight:500; }
+  .navlinks a{ text-decoration:none; opacity:0.7; transition:opacity .2s; position:relative; }
+  .navlinks a:hover{ opacity:1; }
+  .navtoggle{ display:none; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:90px 0 70px;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.25fr 0.9fr;
+    gap:48px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; font-weight:700; letter-spacing:2px;
+    text-transform:uppercase; color:var(--sky-deep);
+    margin-bottom:18px;
+  }
+  .eyebrow::before{ content:""; width:26px; height:1px; background:var(--sky-deep); display:inline-block; }
+  .hero h1{
+    font-size:clamp(34px, 5vw, 56px);
+    line-height:1.32;
+    font-weight:700;
+  }
+  .hero h1 .hl{
+    background-image:linear-gradient(transparent 62%, var(--sky) 62%);
+  }
+  .hero p.lead{
+    margin-top:22px;
+    font-size:16.5px;
+    line-height:1.85;
+    max-width:480px;
+    opacity:0.82;
+  }
+  .hero-meta{
+    margin-top:34px;
+    display:flex; gap:26px; flex-wrap:wrap;
+    font-size:13.5px;
+  }
+  .hero-meta div{ display:flex; flex-direction:column; gap:3px; }
+  .hero-meta b{ font-size:11px; letter-spacing:1px; text-transform:uppercase; opacity:0.5; font-weight:500;}
+
+  .photo-frame{
+    position:relative;
+    justify-self:end;
+    width:280px;
+  }
+  .photo-frame .ring{
+    position:absolute; inset:-14px;
+    border:1.5px solid var(--coral);
+    border-radius:6px;
+    transform:rotate(-3deg);
+    z-index:0;
+  }
+  .photo-frame img{
+    position:relative; z-index:1;
+    width:100%; display:block;
+    border-radius:4px;
+    box-shadow:0 24px 50px -18px rgba(39,48,42,0.35);
+  }
+  .photo-frame .tag{
+    position:absolute; z-index:2; bottom:-16px; left:-22px;
+    background:var(--ink); color:var(--paper);
+    font-family:'Gowun Dodum', sans-serif;
+    font-size:13px; padding:9px 16px; border-radius:30px;
+    box-shadow:0 8px 18px -6px rgba(0,0,0,0.4);
+  }
+
+  .wave{
+    width:100%; height:46px; display:block; margin-top:40px;
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{ padding:78px 0; }
+  .section-head{ margin-bottom:46px; max-width:620px; }
+  .section-head .eyebrow{ margin-bottom:14px; }
+  .section-head h2{ font-size:clamp(26px,3.4vw,36px); line-height:1.4; }
+  .section-head p{ margin-top:14px; font-size:15px; opacity:0.7; line-height:1.8; }
+
+  /* ---------- ABOUT ---------- */
+  .about{ background:var(--card); border-top:1px solid rgba(39,48,42,0.08); border-bottom:1px solid rgba(39,48,42,0.08); }
+  .about-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:18px;
+  }
+  .about-right{
+    display:flex; flex-direction:column; gap:18px;
+  }
+  .pill-card{
+    border:1px solid rgba(39,48,42,0.12);
+    border-radius:14px;
+    padding:26px 24px;
+    background:var(--paper);
+  }
+  .pill-card h3{
+    font-family:'Noto Sans KR'; font-size:13px; font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; color:var(--sky-deep);
+    margin-bottom:14px;
+  }
+  .pill-card ul{ margin:0; padding:0; list-style:none; }
+  .pill-card li{
+    font-size:14.5px; padding:7px 0; line-height:1.6;
+    border-bottom:1px dashed rgba(39,48,42,0.12);
+    display:flex; gap:10px;
+  }
+  .pill-card li:last-child{ border-bottom:none; }
+  .pill-card li::before{ content:"·"; color:var(--coral); font-weight:900; }
+  .pill-card.wide{ grid-column:1/-1; }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:9px; }
+  .chip{
+    font-size:13px; padding:8px 14px; border-radius:30px;
+    border:1px solid rgba(39,48,42,0.18);
+    background:#fff;
+  }
+  .award-strip{ display:flex; flex-direction:column; gap:10px; }
+  .award-strip .row{ display:flex; align-items:baseline; gap:12px; font-size:14.5px; }
+  .award-strip .row b{ font-family:'Gowun Batang'; font-size:16px; color:var(--coral); min-width:22px;}
+
+  /* ---------- PROJECTS ---------- */
+  .projects{ }
+  .project{
+    display:grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap:50px;
+    align-items:flex-start;
+    padding:54px 0;
+    border-top:1px solid rgba(39,48,42,0.12);
+  }
+  .project:first-of-type{ border-top:none; padding-top:0; }
+  .project.rev{ grid-template-columns:1.15fr 0.85fr; }
+  .project.rev .p-text{ order:2; }
+  .project.rev .p-media{ order:1; }
+
+  .p-text .org{
+    font-size:12.5px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--moss);
+  }
+  .p-text .when{ font-size:12.5px; opacity:0.5; margin-left:10px; }
+  .p-text h3{ font-size:25px; margin-top:10px; line-height:1.4; font-weight:700; }
+  .p-text .role{
+    font-size:13px; margin-top:6px; opacity:0.6; font-style:italic;
+  }
+  .p-text .desc{ margin-top:16px; }
+  .p-text .desc h4{
+    font-family:'Noto Sans KR'; font-size:12px; font-weight:700;
+    color:var(--sky-deep); letter-spacing:0.5px; margin:18px 0 8px;
+  }
+  .p-text .desc h4:first-child{ margin-top:0; }
+  .p-text ul{ margin:0; padding:0; list-style:none; }
+  .p-text li{
+    font-size:14px; line-height:1.75; padding-left:16px; position:relative; opacity:0.85;
+  }
+  .p-text li::before{
+    content:""; position:absolute; left:0; top:9px;
+    width:5px; height:5px; background:var(--coral); border-radius:50%;
+  }
+  .result-box{
+    margin-top:18px; padding:16px 18px;
+    background:var(--sky); border-radius:10px;
+    font-size:13.5px; line-height:1.7;
+  }
+  .result-box b{ color:#1c4f60; }
+
+  .p-media{ position:relative; }
+  .p-media img{
+    width:100%; display:block; border-radius:10px;
+    box-shadow:0 30px 60px -28px rgba(39,48,42,0.4);
+    border:1px solid rgba(39,48,42,0.08);
+  }
+  .p-media .num{
+    position:absolute; top:-18px; left:-18px;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--ink); color:var(--paper);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Gowun Batang'; font-size:16px; font-weight:700;
+    z-index:3; box-shadow:0 8px 16px -6px rgba(0,0,0,0.4);
+  }
+
+  /* ---------- CLOSING ---------- */
+  .closing{
+    background:#ffffff;
+    padding:110px 0 80px; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .closing h2{
+    font-size:clamp(30px,5vw,48px); color:var(--ink);
+  }
+  .closing .em{ color:var(--sky-deep); }
+  .closing p{ margin-top:18px; opacity:0.65; font-size:14.5px; color:var(--ink); }
+  .closing .sign{
+    margin-top:50px; font-family:'Gowun Dodum'; font-size:16px; opacity:0.85; color:var(--ink);
+  }
+  .closing .date{
+    margin-top:6px; font-size:12px; letter-spacing:1.5px; opacity:0.45; color:var(--ink); text-transform:uppercase;
+  }
+
+  footer{
+    background:#ffffff; color:rgba(39,48,42,0.35);
+    text-align:center; font-size:12px; padding:22px 0; border-top:1px solid rgba(39,48,42,0.1);
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 880px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .photo-frame{ justify-self:start; width:200px; order:-1; }
+    .about-grid{ grid-template-columns:1fr; }
+    .project, .project.rev{ grid-template-columns:1fr !important; gap:26px; }
+    .project.rev .p-text{ order:1; }
+    .project.rev .p-media{ order:2; }
+    .navlinks{ display:none; }
+  }
