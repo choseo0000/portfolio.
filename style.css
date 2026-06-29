@@ -164,6 +164,15 @@
   .award-strip{ display:flex; flex-direction:column; gap:10px; }
   .award-strip .row{ display:flex; align-items:baseline; gap:12px; font-size:14.5px; }
   .award-strip .row b{ font-family:'Gowun Batang'; font-size:16px; color:var(--coral); min-width:22px;}
+  .cert-list{ display:flex; flex-direction:row; gap:9px; flex-wrap:wrap; }
+  .cert-item{
+    display:flex; align-items:center; gap:7px;
+    font-size:13px; padding:8px 14px; border-radius:30px;
+    border:1px solid rgba(39,48,42,0.18);
+    background:#fff;
+  }
+  .cert-icon{ font-size:13px; }
+  .cert-name{ font-weight:500; }
 
   /* ---------- PROJECTS ---------- */
   .projects{ }
